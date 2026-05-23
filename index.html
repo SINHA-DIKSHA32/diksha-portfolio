@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diksha Bharti | Portfolio</title>
+  <meta name="description" content="Portfolio of Diksha Bharti, MCA student and software developer aspirant.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/portfolio-data.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-progress" aria-hidden="true">
+    <span id="scrollProgressBar"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="layout-wrap nav-shell">
+      <a class="brand-mark" href="index.html" aria-label="Diksha Bharti home">
+        <span>DB</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav id="primaryNav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#toolkit">Toolkit</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-solid resume-link" href="assets/docs/Resume_Diksha.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-frame reveal">
+      <div class="layout-wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" id="heroRole">Software Developer Aspirant</p>
+          <h1 id="heroName">Diksha Bharti</h1>
+          <p class="hero-subtitle" id="heroSubtitle"></p>
+          <p class="hero-summary" id="heroObjective"></p>
+          <ul class="signal-strip" aria-label="Professional highlights">
+            <li>Open to Entry-Level Roles</li>
+            <li>Problem Solving Mindset</li>
+            <li>Project-Based Learning</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-solid resume-link" href="assets/docs/Resume_Diksha.pdf" target="_blank" rel="noopener">Download Resume</a>
+            <a class="btn btn-outline" href="#contact">Get in Touch</a>
+          </div>
+          <ul class="contact-inline" aria-label="Primary contacts">
+            <li><a id="contactEmailInline" href="#">Email</a></li>
+            <li><a id="contactPhoneInline" href="#">Phone</a></li>
+            <li><a id="contactLinkedinInline" href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a id="contactGithubInline" href="#" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="hero-side">
+          <article class="avatar-card reveal">
+            <div class="avatar-stage" role="img" aria-label="Animated developer avatar illustration">
+              <span class="avatar-orbit orbit-a"></span>
+              <span class="avatar-orbit orbit-b"></span>
+              <span class="avatar-orbit orbit-c"></span>
+              <span class="avatar-dot dot-a"></span>
+              <span class="avatar-dot dot-b"></span>
+              <span class="avatar-dot dot-c"></span>
+              <div class="avatar-core">
+                <span class="avatar-initials">DB</span>
+                <span class="avatar-laptop"></span>
+              </div>
+            </div>
+            <h2>Developer Presence</h2>
+            <p>Consistent learner with a practical engineering mindset and strong execution focus.</p>
+          </article>
+          <aside class="hero-panel reveal">
+            <h2>Career Snapshot</h2>
+            <p id="careerSnapshotText"></p>
+            <div class="snapshot-grid">
+              <article>
+                <span class="snapshot-value" id="snapshotProjects"></span>
+                <span class="snapshot-label">Projects</span>
+              </article>
+              <article>
+                <span class="snapshot-value" id="snapshotCertifications"></span>
+                <span class="snapshot-label">Certifications</span>
+              </article>
+              <article>
+                <span class="snapshot-value" id="snapshotEducation"></span>
+                <span class="snapshot-label">Academic Milestones</span>
+              </article>
+              <article>
+                <span class="snapshot-value" id="snapshotSoftSkills"></span>
+                <span class="snapshot-label">Soft Skills</span>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-frame reveal">
+      <div class="layout-wrap split-layout">
+        <div>
+          <p class="section-kicker">01</p>
+          <h2>About</h2>
+          <p id="aboutText"></p>
+        </div>
+        <div class="card-panel">
+          <h3>Strengths</h3>
+          <ul id="softSkillsList" class="pill-list"></ul>
+          <p class="muted-text">Focused on practical problem-solving, disciplined execution, and continuous growth.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-frame reveal">
+      <div class="layout-wrap">
+        <p class="section-kicker">02</p>
+        <h2>Skills and Core Tools</h2>
+        <div id="skillsGrid" class="skills-grid"></div>
+      </div>
+    </section>
+
+    <section id="toolkit" class="section-frame reveal">
+      <div class="layout-wrap">
+        <p class="section-kicker">03</p>
+        <h2>Professional Toolkit</h2>
+        <p class="section-intro">Tools and workflows I use to plan, build, debug, and deliver software projects efficiently.</p>
+        <div id="toolkitGrid" class="toolkit-grid"></div>
+      </div>
+    </section>
+
+    <section id="education" class="section-frame reveal">
+      <div class="layout-wrap">
+        <p class="section-kicker">04</p>
+        <h2>Education</h2>
+        <div id="educationList" class="education-grid"></div>
+      </div>
+    </section>
+
+    <section class="section-frame reveal">
+      <div class="layout-wrap">
+        <div class="section-header-row">
+          <div>
+            <p class="section-kicker">05</p>
+            <h2>Featured Projects</h2>
+          </div>
+          <a class="btn btn-outline" href="projects.html">View Full Project Page</a>
+        </div>
+        <div id="featuredProjectsGrid" class="projects-grid"></div>
+      </div>
+    </section>
+
+    <section class="section-frame reveal">
+      <div class="layout-wrap">
+        <p class="section-kicker">06</p>
+        <h2>How I Work</h2>
+        <div id="capabilityList" class="capability-grid"></div>
+      </div>
+    </section>
+
+    <section class="section-frame reveal">
+      <div class="layout-wrap dual-grid">
+        <div>
+          <p class="section-kicker">07</p>
+          <h2>Certifications</h2>
+          <div id="certificationsList" class="stack-list"></div>
+        </div>
+        <div>
+          <p class="section-kicker">08</p>
+          <h2>Achievements</h2>
+          <div id="achievementsList" class="stack-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-frame reveal contact-section">
+      <div class="layout-wrap contact-grid">
+        <div>
+          <p class="section-kicker">09</p>
+          <h2>Contact</h2>
+          <p>I am open to software development internships, entry-level roles, and collaborative project opportunities.</p>
+        </div>
+        <div class="contact-card">
+          <a id="contactEmailMain" href="#"></a>
+          <a id="contactPhoneMain" href="#"></a>
+          <a id="contactLinkedinMain" href="#" target="_blank" rel="noopener">LinkedIn Profile</a>
+          <a id="contactGithubMain" href="#" target="_blank" rel="noopener">GitHub Profile</a>
+          <a class="btn btn-solid resume-link" href="assets/docs/Resume_Diksha.pdf" target="_blank" rel="noopener">Open Resume PDF</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="layout-wrap footer-row">
+      <p><span id="footerName">Diksha Bharti</span> | Portfolio</p>
+      <p id="footerYear"></p>
+    </div>
+  </footer>
+</body>
+</html>

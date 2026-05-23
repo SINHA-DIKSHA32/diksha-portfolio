@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Diksha Bharti</title>
+  <meta name="description" content="Detailed software project portfolio of Diksha Bharti.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/portfolio-data.js" defer></script>
+  <script src="assets/js/projects.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-progress" aria-hidden="true">
+    <span id="scrollProgressBar"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="layout-wrap nav-shell">
+      <a class="brand-mark" href="index.html" aria-label="Back to home">
+        <span>DB</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav id="primaryNav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html#about">About</a></li>
+          <li><a class="nav-link" href="index.html#skills">Skills</a></li>
+          <li><a class="nav-link" href="index.html#toolkit">Toolkit</a></li>
+          <li><a class="nav-link" href="index.html#education">Education</a></li>
+          <li><a class="nav-link" href="projects.html" aria-current="page">Projects</a></li>
+          <li><a class="nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-solid resume-link" href="assets/docs/Resume_Diksha.pdf" target="_blank" rel="noopener">Resume</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section-frame reveal">
+      <div class="layout-wrap projects-hero">
+        <div>
+          <p class="section-kicker">Portfolio Case Studies</p>
+          <h1>Project Work by <span id="projectOwnerName">Diksha Bharti</span></h1>
+          <p id="projectIntroText"></p>
+        </div>
+        <aside class="card-panel compact">
+          <h2>Quick Contact</h2>
+          <a id="projectEmailLink" href="#"></a>
+          <a id="projectPhoneLink" href="#"></a>
+          <a id="projectLinkedinLink" href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a id="projectGithubLink" href="#" target="_blank" rel="noopener">GitHub</a>
+          <div id="projectToolChips" class="tool-chip-row"></div>
+          <a class="btn btn-outline resume-link" href="assets/docs/Resume_Diksha.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-frame reveal">
+      <div class="layout-wrap">
+        <div id="projectCards" class="project-detail-grid"></div>
+      </div>
+    </section>
+
+    <section class="section-frame reveal">
+      <div class="layout-wrap next-steps-card">
+        <h2>What I Bring to a Team</h2>
+        <p>Hands-on implementation mindset, structured debugging habits, and continuous learning through practical software projects.</p>
+        <a class="btn btn-solid" href="index.html#contact">Discuss Opportunities</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="layout-wrap footer-row">
+      <p><span id="footerName">Diksha Bharti</span> | Projects</p>
+      <p id="footerYear"></p>
+    </div>
+  </footer>
+</body>
+</html>
