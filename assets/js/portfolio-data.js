@@ -5,7 +5,12 @@ const PORTFOLIO_DATA = {
     subtitle: "Building practical software products with strong coding fundamentals, structured problem solving, and project-driven execution.",
     objective:
       "Motivated MCA student aspiring to become a software developer, with a strong foundation in programming, data structures, and databases. Seeking a challenging role to contribute technical skills and grow within a dynamic organization.",
-    resumePath: "assets/docs/Resume_Diksha.pdf"
+    resumePath: "assets/docs/Resume_Diksha.pdf",
+    profilePhoto: {
+      path: "assets/images/diksha-professional-photo.jpeg",
+      alt: "Diksha Bharti in formal attire, professional profile photo",
+      position: "52% 22%"
+    }
   },
   contacts: {
     email: "sinhadiksha32@gmail.com",
@@ -90,7 +95,12 @@ const PORTFOLIO_DATA = {
         "Focused on deterministic matching for clarity and interpretability.",
         "Structured program flow for clean test inputs and outputs."
       ],
-      links: []
+      links: [
+        {
+          label: "GitHub Repository",
+          url: "https://github.com/SINHA-DIKSHA32/plagarism-detection"
+        }
+      ]
     },
     {
       id: "biometric-retrieval",
@@ -108,7 +118,12 @@ const PORTFOLIO_DATA = {
         "Prioritized practical usability for time-sensitive scenarios.",
         "Built with reliability and consistency in data retrieval flow."
       ],
-      links: []
+      links: [
+        {
+          label: "GitHub Repository",
+          url: "https://github.com/SINHA-DIKSHA32/aegiscare-biometric-patient-record-system"
+        }
+      ]
     },
     {
       id: "smart-virtual-assistant",
@@ -126,7 +141,35 @@ const PORTFOLIO_DATA = {
         "Supports both text and voice command pathways.",
         "Built as an extendable foundation for future smart-device integration."
       ],
-      links: []
+      links: [
+        {
+          label: "Project Updates (GitHub Profile)",
+          url: "https://github.com/SINHA-DIKSHA32?tab=repositories"
+        }
+      ]
+    },
+    {
+      id: "nexusfolio-pro",
+      title: "NexusFolio Pro - Personal Branding Portfolio",
+      status: "Completed",
+      summary:
+        "Designed and developed a modern multi-page portfolio website with responsive layout, animated UI, and data-driven content architecture.",
+      contribution:
+        "Built complete frontend structure, interaction logic, mobile-optimized navigation, certifications workflow, and reusable portfolio data contract.",
+      outcome:
+        "Delivered an interview-ready personal brand website with project showcases, certification pages, and recruiter-friendly contact flow.",
+      stack: ["HTML", "CSS", "JavaScript", "Responsive Design", "UI Animation"],
+      highlights: [
+        "Implemented standalone projects and certifications pages for better recruiter navigation.",
+        "Integrated profile photo, polished visual styling, and accessible interactions.",
+        "Added scalable data model for easy future content and link updates."
+      ],
+      links: [
+        {
+          label: "GitHub Repository",
+          url: "https://github.com/SINHA-DIKSHA32/diksha-portfolio"
+        }
+      ]
     }
   ],
   education: [
@@ -156,13 +199,6 @@ const PORTFOLIO_DATA = {
     }
   ],
   certifications: [
-    {
-      title: "TCS iON Career Edge - Young Professional",
-      issuer: "TCS iON",
-      period: "May 2024",
-      details:
-        "Completed modules on communication, presentation, resume writing, group discussion, interview skills, IT fundamentals, and AI (NPTEL)."
-    },
     {
       title: "Python with Machine Learning - On Job Training",
       issuer: "LifeTech Software",

@@ -17,6 +17,14 @@ function setAnchor(id, href, label) {
   }
 }
 
+function setImage(id, src, altText, objectPosition) {
+  const el = byId(id);
+  if (!el) return;
+  if (src) el.src = src;
+  if (altText) el.alt = altText;
+  if (objectPosition) el.style.objectPosition = objectPosition;
+}
+
 function renderSkills(skills) {
   const wrap = byId("skillsGrid");
   if (!wrap) return;
@@ -350,6 +358,12 @@ function init() {
   setText("heroName", data.profile.fullName);
   setText("heroSubtitle", data.profile.subtitle);
   setText("heroObjective", data.profile.objective);
+  setImage(
+    "heroProfileImage",
+    data.profile.profilePhoto?.path,
+    data.profile.profilePhoto?.alt,
+    data.profile.profilePhoto?.position
+  );
   setText("aboutText", data.profile.objective);
   setText(
     "careerSnapshotText",
