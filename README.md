@@ -40,6 +40,7 @@ Interview-ready personal portfolio built for professional screening, recruiter r
 - `PROJECT_BUILD_AND_VIVA_GUIDE.md` - Build explanation, file guide, viva and recruiter Q&A
 - `GITHUB_PROFILE_README_TEMPLATE.md` - Ready profile README for GitHub profile page
 - `GITHUB_PROFILE_SETUP.md` - Fast setup steps for profile branding
+- `LINKEDIN_PROFILE_KIT.md` - Recruiter-focused LinkedIn headline/about/skills/project text kit
 
 ## Run Locally
 
